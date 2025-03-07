@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processedOrder>
+    <orderReference>ORD-2024-001</orderReference>
+    <customerDetails>
+        <customerName>John Doe</customerName>
+        <customerEmail>john.doe@example.com</customerEmail>
+    </customerDetails>
+    <orderItems>
+        <orderItem>
+            <sku>PROD-001</sku>
+            <orderedQuantity>2</orderedQuantity>
+            <unitPrice>29.99</unitPrice>
+            <totalPrice>59.98</totalPrice>
+        </orderItem>
+        <orderItem>
+            <sku>PROD-002</sku>
+            <orderedQuantity>1</orderedQuantity>
+            <unitPrice>49.99</unitPrice>
+            <totalPrice>49.99</totalPrice>
+        </orderItem>
+    </orderItems>
+    <totalOrderValue>109.97</totalOrderValue>
+</processedOrder> 

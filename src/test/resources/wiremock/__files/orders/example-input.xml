@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<order>
+    <orderId>ORD-2024-001</orderId>
+    <customer>
+        <name>John Doe</name>
+        <email>john.doe@example.com</email>
+    </customer>
+    <items>
+        <item>
+            <productId>PROD-001</productId>
+            <quantity>2</quantity>
+            <price>29.99</price>
+        </item>
+        <item>
+            <productId>PROD-002</productId>
+            <quantity>1</quantity>
+            <price>49.99</price>
+        </item>
+    </items>
+</order> 

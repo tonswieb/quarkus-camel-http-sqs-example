@@ -1,0 +1,13 @@
+{
+    "request": {
+        "method": "GET",
+        "urlPath": "/orders"
+    },
+    "response": {
+        "status": 200,
+        "headers": {
+            "Content-Type": "application/xml"
+        },
+        "bodyFileName": "orders/example-input.xml"
+    }
+} 
