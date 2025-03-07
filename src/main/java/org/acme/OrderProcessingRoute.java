@@ -20,7 +20,7 @@ public class OrderProcessingRoute extends RouteBuilder {
         from("timer:pollOrders?delay=10000&period=10000")
             .to("http://" + pollingUrl)
             .to("validator:schemas/input.xsd")
-            .to("xslt:classpath:xslt/transform.xslt?transformerFactory=#saxon")
+            .to("xslt-saxon:xslt/transform.xslt")
             .to("validator:schemas/output.xsd")
             .to("aws2-sqs:" + sqsQueue + "?autoCreateQueue=true");
     }
