@@ -51,6 +51,20 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 
 You can then execute your native executable with: `./target/getting-started-1.0.0-SNAPSHOT-runner`
 
+By default, the runner will try to connect to localstack on localhost:4566, so if you want that to work, first [install the localstack CLI](https://docs.localstack.cloud/getting-started/installation/), then start it:
+
+```shell script
+localstack start
+```
+
+You can observe messages being sent to SQS using the convenient [`awscli-local` tool](https://github.com/localstack/awscli-local) (If you already have `uv`, quickly install it using `uv tool install awscli-local`):
+
+```shell
+while true; do
+    awslocal sqs receive-message --queue-url order-processing-queue --max-number-of-messages 10 --wait-time-seconds 20;
+done
+```
+
 If you want to learn more about building native executables, please consult <https://quarkus.io/guides/maven-tooling>.
 
 ## Related Guides
